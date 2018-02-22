@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/boostrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <meta name="description" content="Buy hockey gear online, quick & easy.">
+    <meta name="keywords" content="Hockey gear, CCM, Bauer, Warrior">
+    <meta name="author" content="Marcus">
+    <title>Annet Cake</title>
+</head>
+<body>
+<header id="header">
+    <div class="main-bar">
+        <div class="container">
+            <div class="row top">
+                <div class="hidden-xs col-sm-4 header-phone-bar">
+
+                </div>
+                <div class="col-sm-4 header-phone-search">
+                    <h1 class="header-annet">&copy; Annet Cake</h1>
+                </div>
+                <div class="hidden-xs col-sm-4 header-cart-bar">
+
+                </div>
+            </div>
+            <div class="row navigation">
+                <div class="col-xs-12">
+                    <div id="nav" class="clearfix">
+                        <ul class=" nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                        </ul>
+                        <a href="checkout.html" class="pull-right"><button class="btn btn-success">Checkout</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="breadcrumb"></nav>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" id="cartRow">
+
+        </div>
+        <div class="col-sm-6">
+            <h3>Register buyer</h3>
+            <form name="regBuyer" class="form-horizontal" action="confirmationbuy.html" onsubmit="validateForm()">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="fname">First name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="fname" id="fname" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="lname">Last name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="lname" id="lname" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="random@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="phone">Phone:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address">Street address:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="address" id="address" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="zip">Zip code:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="zip" id="zip" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="city">City:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="city" id="city" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="country">Country:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="country" id="country" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="comment">Comment:</label>
+                    <div class="col-sm-offset-2 col-sm-10">
+                    <textarea class="form-control" rows="5" name="comment" id="comment"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> I want to receive monthly newsletter and offers from Annet Cake</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-danger" id="submitButton">Submit</button>
+                        <em>You must have an item in your cart!</em>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row footer">
+        <div class="col-sm-4">
+            <h4>Contact us</h4>
+            <p><span class="fa fa-phone"></span> +46 (0)41-23 45 00</p>
+            <p><span class="fa fa-envelope-open"></span> contact@annetcake.se</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>&copy; Annet Cake</h3>
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+                <h4>Social media</h4>
+                <a class="btn btn-social-icon btn-twitter">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a class="btn btn-social-icon btn-google">
+                    <span class="fa fa-google-plus"></span>
+                </a>
+            </div>
+            <div class="row">
+                <em>Like and follow our page!!</em>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../checkout-javascript/checkout.js"></script>
+</body>
+</html>
